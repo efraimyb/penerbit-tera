@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Tambahkan baris Sitemap setelah domain produksi ditetapkan.
+# Contoh: Sitemap: https://domain-anda.id/sitemap.xml

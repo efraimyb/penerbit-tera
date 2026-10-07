@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#704a13" flood-opacity=".22"/></filter></defs>
+  <g filter="url(#s)">
+    <path d="M6 15c9-3 17-1 24 5v28c-7-6-15-8-24-5V15Z" fill="#fff9e9" stroke="#fff" stroke-width="2"/>
+    <path d="M58 15c-9-3-17-1-24 5v28c7-6 15-8 24-5V15Z" fill="#fff" stroke="#fff" stroke-width="2"/>
+    <path d="M32 20v28" stroke="#d49a3c" stroke-width="2"/><path d="M10 21c6-1 11 0 16 3M10 27c6-1 11 0 16 3M54 21c-6-1-11 0-16 3" fill="none" stroke="#e1bd7b" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="35" y="36" width="27" height="15" rx="3" fill="#005457"/><text x="48.5" y="46.5" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="700">ISBN</text>
+  </g>
+</svg>
