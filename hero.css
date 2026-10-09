@@ -117,31 +117,28 @@ a.nav-item{padding:0 16px;font-family:var(--font-ui);font-size:14.5px;font-weigh
 @media(min-width:1051px){.flow-step:nth-of-type(1){margin-top:225px}.flow-step:nth-of-type(2){margin-top:92px}.flow-step:nth-of-type(3){margin-top:220px}.flow-step:nth-of-type(4){margin-top:76px}.flow-step:nth-of-type(5){margin-top:210px}.flow-step:nth-of-type(6){margin-top:112px}}
 @media(max-width:1050px){.flow-step:nth-of-type(1),.flow-step:nth-of-type(2),.flow-step:nth-of-type(3),.flow-step:nth-of-type(4),.flow-step:nth-of-type(5),.flow-step:nth-of-type(6){margin-top:0}}
 
-/* Precise desktop placement around the marker curve. */
+/* Flow labels use normal layout so wrapped headings cannot overlap descriptions. */
 @media(min-width:1051px){
-  .flow-steps{min-height:430px}
-  .flow-step,.flow-step:nth-of-type(1),.flow-step:nth-of-type(2),.flow-step:nth-of-type(3),.flow-step:nth-of-type(4),.flow-step:nth-of-type(5),.flow-step:nth-of-type(6){height:420px;margin-top:0!important;transform:none}
+  .publishing-flow{padding-top:80px}.flow-header{margin-bottom:24px}.flow-header h2{margin-bottom:12px}
+  .flow-steps{min-height:560px;gap:16px;padding:0}
+  .flow-path{top:165px}
+  .flow-step,.flow-step:nth-of-type(1),.flow-step:nth-of-type(2),.flow-step:nth-of-type(3),.flow-step:nth-of-type(4),.flow-step:nth-of-type(5),.flow-step:nth-of-type(6){display:flex;flex-direction:column;gap:12px;height:auto;min-height:560px;margin-top:0!important;padding:0 8px;transform:none}
   .flow-step:hover{transform:none}
-  .flow-step .flow-icon{position:absolute;left:50%;margin:0;transform:translateX(-50%)}
-  .flow-step h3,.flow-step p{position:absolute;left:8px;right:8px;margin:0;text-align:center}
-  .flow-step h3{font-size:18px;line-height:1.25}
-  .flow-step p{font-size:13px;line-height:1.55}
-  .flow-step:nth-of-type(1) .flow-icon,.flow-step:nth-of-type(3) .flow-icon{top:223px}
-  .flow-step:nth-of-type(5) .flow-icon{top:212px}
-  .flow-step:nth-of-type(2) .flow-icon,.flow-step:nth-of-type(4) .flow-icon{top:100px}
-  .flow-step:nth-of-type(6) .flow-icon{top:138px}
-  .flow-step:nth-of-type(1) h3,.flow-step:nth-of-type(3) h3{top:298px}
-  .flow-step:nth-of-type(5) h3{top:287px}
-  .flow-step:nth-of-type(1) p,.flow-step:nth-of-type(3) p{top:339px}
-  .flow-step:nth-of-type(5) p{top:328px}
-  .flow-step:nth-of-type(2) h3,.flow-step:nth-of-type(4) h3,.flow-step:nth-of-type(6) h3{top:0}
-  .flow-step:nth-of-type(2) p,.flow-step:nth-of-type(4) p,.flow-step:nth-of-type(6) p{top:34px;font-size:12.5px;line-height:1.45}
+  .flow-step h3,.flow-step p{position:static;margin:0;text-align:center;overflow-wrap:break-word}
+  .flow-step h3{font-size:18px;line-height:1.35}
+  .flow-step p{font-size:13px;line-height:1.6}
+  .flow-step:nth-of-type(odd){padding-top:418px}
+  .flow-step:nth-of-type(even){box-sizing:border-box;align-self:start;height:220px;min-height:0;justify-content:flex-end;padding-bottom:24px}
+  .flow-step:nth-of-type(6){height:258px}
+  .flow-step .flow-icon{position:absolute;left:50%;margin:0;transform:translateX(-50%);z-index:2}
+  .flow-step:nth-of-type(1) .flow-icon,.flow-step:nth-of-type(3) .flow-icon{top:343px}
+  .flow-step:nth-of-type(5) .flow-icon{top:332px}
+  .flow-step:nth-of-type(2) .flow-icon,.flow-step:nth-of-type(4) .flow-icon{top:220px}
+  .flow-step:nth-of-type(6) .flow-icon{top:258px}
   .flow-step .flow-number{z-index:0;left:50%;right:auto;color:rgba(15,71,73,.16);font-size:50px;line-height:1;font-weight:800;transform:translateX(-50%)}
-  .flow-step:nth-of-type(1) .flow-number,.flow-step:nth-of-type(3) .flow-number,.flow-step:nth-of-type(5) .flow-number{top:164px}
-  .flow-step:nth-of-type(2) .flow-number,.flow-step:nth-of-type(4) .flow-number{top:162px}
-  .flow-step:nth-of-type(6) .flow-number{top:200px}
-  .flow-step .flow-icon{z-index:2}
-  .flow-step h3,.flow-step p{z-index:1}
+  .flow-step:nth-of-type(odd) .flow-number{top:284px}
+  .flow-step:nth-of-type(even) .flow-number{top:296px}
+  .flow-step:nth-of-type(6) .flow-number{top:334px}
 }
 
 /* FAQ */
